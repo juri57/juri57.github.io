@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw07 </title>
+    <link type="text/css" rel="stylesheet" href="hw07.css">
+    </link>
+    <style>
+        h2 {
+            font-size: 30px;
+            margin-top: 50px;
+            color: rgb(170, 115, 43);
+            width: 300px;
+            border-bottom: 4px solid rgb(221, 216, 192);
+        }
+
+
+        #grid {
+            border: 2px solid rgb(221, 216, 192);
+            width: 1000px;
+
+        }
+
+        #grid div {
+            width: 500;
+            font-size: 20px;
+            text-align: left;
+            padding: 10px;
+            margin-right: 0px;
+            color: rgb(170, 115, 43);
+            border: 1px solid rgb(221, 216, 192);
+            display: grid;
+            grid-template-columns: 950px;
+
+        }
+
+
+        #date {
+            font-size: small;
+            color: dimgray;
+        }
+
+        #review {
+            float: right;
+            padding-right: 500px;
+
+        }
+
+        #columns {
+            column-width: 400px;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        #columns figure {
+            display: inline-block;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #columns figure img {
+            width: 100%;
+
+        }
+
+        body>center {
+            border: solid 10px rgb(221, 216, 192);
+            padding: 50px;
+        }
+
+ 
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>모네 향기를 만나다展</h1>
+
+
+        </center>
+
+        <div id="top">
+            <center>
+                <a href="hw07.html">home</a> |
+                <a href="info.html"> info</a> |
+                <a href="ticket.html"> ticket</a> |
+                <a href="review.html"> review</a>
+
+            </center>
+        </div>
+    </header>
+
+    <center>
+        <h2>한 줄 후기</h2>
+        <div id="grid">
+
+            <div>너무 좋았어요~ <span id="date">2021.6.26 방문</span></div>
+            <div>향과 함께 하는 전시는 처음이었는데 새롭고 좋았어요~ 엄마랑 같이 갔는데 엄청 좋아하셨네요!<span id="date">2021.6.25 방문</span></div>
+            <div>멋진작품들과 어우러진 향기까지 행복한 시간이였습니다 ✨💕 <span id="date">2021.6.23 방문</span></div>
+            <div>향기가 좋았어요 <span id="date">2021.6.23 방문</span></div>
+            <div>작품과 체험을 같이 할 수 있어서 좋았어요 <span id="date">2021.6.22 방문</span></div>
+            <div>향기와 함께 전시는 색다르고 좋았어요~ 다만 에어컨을 늦게틀어주셔서 좀 더웠습니다 ㅠ <span id="date">2021.6.20 방문</span></div>
+
+        </div>
+        <br>
+        <a href="https://booking.naver.com/review/bizes/479116?filterId=all&expandId=false" target="_blank">리뷰 더 보기</a>
+        <a id="review" href="review1.html">한 줄 후기 작성하기</a>
+        
+
+
+
+        <h2>사진 후기</h2>
+        <div id="columns">
+            <figure><img src="img/review1.jpg"></figure>
+            <figure><img src="img/review2.jpg"></figure>
+            <figure><img src="img/review3.jpg"></figure>
+            <figure><img src="img/review4.jpg"></figure>
+            <figure><img src="img/review5.jpg"></figure>
+            <figure><img src="img/review6.jpg"></figure>
+            <figure><img src="img/review7.jpg"></figure>
+        </div>
+</center>
+
+        <footer>
+            <center>
+                주최 | 렉스데코 &nbsp&nbsp 주관 | 사야컴퍼니 &nbsp&nbsp
+                제작 | 빅포미디어 &nbsp&nbsp tel. 070 4136 4300
+            </center>
+        </footer>
+    
+
+</body>
+
+</html>
