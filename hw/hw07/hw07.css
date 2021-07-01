@@ -1,0 +1,52 @@
+* {
+    background-color: rgb(253, 245, 236);
+}
+
+
+h1 {
+    margin: 30px;
+    padding: 20px;
+    border: solid 10px rgb(221, 216, 192);
+    color: rgb(170, 115, 43);
+    font-size: 50px;
+    width: 1000px;
+}
+
+#top {
+    font-size: 20px;
+    margin: 15px;
+    color: rgb(170, 115, 43);
+    float:inline-start;
+
+}
+
+a:link {
+    color: rgb(170, 115, 43);
+}
+
+a:visited {
+    color: rgb(255, 153, 0);
+}
+
+a:hover {
+    color: rgb(85, 155, 39);
+}
+
+
+footer {
+    font-size: 15px;
+    margin: 15px;
+    color: rgb(170, 115, 43);
+}
+
+a:link {
+    color: rgb(170, 115, 43);
+}
+
+a:visited {
+    color: rgb(255, 153, 0);
+}
+
+a:hover {
+    color: rgb(85, 155, 39);
+}
