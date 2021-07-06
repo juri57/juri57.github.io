@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw10_2 </title>
+
+</head>
+
+<body>
+    <script>
+    //p.402 10번
+function printdata(){
+        var x,y;
+        var table = new Array();
+
+        document.write('<table border="1">');
+            
+        document.write('<tr>');
+
+        for (x = 1; x < 10; x++) {
+            document.write('<th>' + x + "단" + '</th>');
+            table[x] = new Array();
+        }
+        document.write('<tr>');
+
+
+        for (var x = 1; x < 10; x++) {
+            document.write('<tr>');
+            for (y = 1; y < 10; y++) {
+                table[x][y] = x*y;
+                document.write('<td>' + y + '*' + x + '=' + table[x][y] + '</td>');
+            }
+            document.write('</tr>');
+        }
+    }
+
+        document.write('</table>');
+    </script>
+   <p></p>
+<button type="button" onclick="printdata()">구구단 배열 데이터 보기</button>
+
+</body>
