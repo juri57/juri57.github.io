@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw11_3 </title>
+</head>
+
+<body>
+    <!--p430 6번-->
+
+    <h1>내가 살아온 인생 계산하기</h1>
+    <form>
+        <p>생년월일 입력 : <input type="text" name="bday" id="bday" value="0000-00-00"> </p>
+        <button type="button" value="calculate" onclick="printage()">나이 계산</button>
+        <p>당신은 태어나서 부터 <span id="day">???</span>일 경과해서 지금은 <span id="age">???</span>살 입니다.</p>
+    </form>
+
+    <script>
+        function printage() {
+            var bday = document.getElementById("bday").value.split("-");
+            var a = new Date(bday[0], bday[1] - 1, bday[2]);
+            var b = new Date();
+
+            var c = b.getTime() - a.getTime();
+            var day = Math.floor(c/(1000 * 60 * 60 * 24));
+            var age = Math.floor(day/365);
+
+            document.getElementById("day").innerHTML = day;
+            document.getElementById("age").innerHTML = age;
+
+        }
+       
+    </script>
+</body>
+
+</html>
