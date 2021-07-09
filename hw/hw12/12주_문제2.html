@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw12_2 </title>
+</head>
+
+<body>
+    <script>
+       function OnMouseIn(elem)
+        {
+            elem.style.width="500px";
+            elem.style.height="500px";
+        }
+        function OnMouseOut(elem)
+        {
+            elem.style.width="";
+            elem.style.height="";
+        }
+    </script>
+
+    <img src="./img/boongboong.jpg" width="200" height="200"
+    onmouseover="OnMouseIn(this)" onmouseout="OnMouseOut(this)"
+    >
+    
+</body>
+
+</html>

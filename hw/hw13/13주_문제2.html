@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw13_2 </title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img.soccer").hide();
+            $("button.soccer").click(function () {
+                $("img.baseball").hide();
+                $("img.basketball").hide();
+                $("img.soccer").show();
+            })
+            $("img.baseball").hide();
+            $("button.baseball").click(function () {
+                $("img.soccer").hide();
+                $("img.basketball").hide();
+                $("img.baseball").show();
+            })
+            $("img.basketball").hide();
+            $("button.basketball").click(function () {
+                $("img.soccer").hide();
+                $("img.baseball").hide();
+                $("img.basketball").show();
+            })
+        });
+        
+    </script>
+    <style>
+        button{margin: 20px;}
+            </style>
+
+</head>
+
+<body>
+    <h1>당신이 좋아하는 스포츠는?</h1>
+    <button class="soccer"><span>프로축구</span></button>
+    <button class="baseball"><span>프로야구</span></button>
+    <button class="basketball"><span>프로농구</span></button>
+    <p></p>
+    <img class="soccer" src="img/soccer.jpg" width="200" height="200">
+    <img class="baseball" src="img/baseball.jpg" width="200" height="200">
+    <img class="basketball" src="img/basketball.jpg" width="200" height="200">
+    <p></p>
+
+ 
+
+
+
+</body>
+
+</html>

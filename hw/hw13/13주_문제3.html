@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw13_3 </title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".big").hide();
+            $("button").click(function () {
+                $(".big").slideToggle("slow");
+            })
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <img src="img/boongboong.jpg" width="200" height="200">
+    <p></p>
+    <button>큰 이미지 보기/닫기</button>
+    <p></p>
+    <img class="big" src="img/boongboong.jpg" width="500" height="500">
+    <p></p>
+
+
+
+</body>
+
+</html>

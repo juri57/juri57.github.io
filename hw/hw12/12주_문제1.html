@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw12_1 </title>
+
+    <style>
+        button {
+            background-color: aqua;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="plus1()"><span>10까지 더하기</span></button>
+    <button type="button" onclick="plus2()"><span>50까지 더하기</span></button>
+    <button type="button" onclick="plus3()"><span>100까지 더하기</span></button>
+
+    <script>
+
+        function plus1() {
+            let sum = 0;
+            for (let i = 1; i <= 10; i++) {
+                sum += i;
+            }
+            alert("10까지 더한 값은 " + sum + "입니다.");
+        }
+
+        function plus2() {
+            let sum = 0;
+            for (let i = 1; i <= 50; i++) {
+                sum += i;
+            }
+            alert("50까지 더한 값은 " + sum + "입니다.");
+        }
+
+        function plus3() {
+            let sum = 0;
+            for (let i = 1; i <= 100; i++) {
+                sum += i;
+            }
+            alert("100까지 더한 값은 " + sum + "입니다.");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw12_3 </title>
+    
+</head>
+
+<body>
+
+
+    <script>
+
+        function checkEng(str) {
+            var a = /[a-z]/;
+            var b = /[A-Z]/;
+            var c = /[^a-zA-Z]/;
+    
+            if (str.match(a)) {
+                document.write("입력한 글자는 소문자" + str + "입니다.");
+
+            }
+            else if (str.match(b)) {
+                document.write("입력한 글자는 대문자" + str + "입니다.");
+
+            }
+            else if (str.match(c)) {
+                document.write(str + "는 영문자가 아닙니다.");
+
+            }
+            else if(typeof str == "undefined" || str == null || str == ""){
+                document.write("입력을 취소했습니다.");
+
+            }
+            else {
+                document.write("입력을 취소했습니다.");
+
+
+            }
+
+        }
+
+        var str = prompt("영문자를 입력하세요:");
+        checkEng(str);
+
+        
+        
+    </script>
+
+</body>
+
+</html>

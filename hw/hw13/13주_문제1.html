@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw13_1 </title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        var a=0;
+        var b=0;
+        var c=0;
+
+        $(document).ready(function () {
+            $("div.yellow").click(function () {
+                $("div.yellow p:first").text("mouse down");
+                $("div.yellow p:last").text("총 클릭 횟수"+ ++a );
+            })
+            $("div.blue").click(function () {
+                $("div.blue p:first").text("mouse down");
+                $("div.blue p:last").text("총 클릭 횟수"+ ++b  );
+            })
+            $("div.mint").click(function () {
+                $("div.mint p:first").text("mouse down");
+                $("div.mint p:last").text("총 클릭 횟수"+ ++c );
+            })
+
+        });
+
+    </script>
+    <style>
+        div.yellow{background-color: yellow; width: 150px; }
+        div.blue{background-color: rgb(0, 247, 255); width: 150px; }
+        div.mint{background-color: mediumturquoise; width: 150px; }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="yellow">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+        <br>
+        
+    </div>
+
+    <div class="blue">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p><br>
+    </div>
+
+    <div class="mint">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p><br>
+    </div>
+
+</body>
+
+</html>
